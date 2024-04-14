@@ -1,12 +1,14 @@
+"use client";
+
 import { motion } from "framer-motion";
 import Link from "next/link";
 
 interface DropDownMenuProps {
   onClose: () => void;
-  scrollToServices: () => void; // Add scrollToServices function to props
+
 }
 
-const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose, scrollToServices }) => {
+const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
   return (
     <motion.div
       className="
@@ -44,7 +46,7 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose, scrollToServices }
         </Link>
 
         {/* Add onClick handler to Services link */}
-        <div onClick={() => { scrollToServices(); onClose(); }} className="cursor-pointer text-black text-2xl">
+        <div onClick={() => { onClose(); }} className="cursor-pointer text-black text-2xl">
           Services
         </div>
       </div>

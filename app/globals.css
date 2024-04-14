@@ -71,6 +71,48 @@
       @apply border-border;
     }
     body {
-      @apply bg-background text-foreground;
+      @apply overflow-x-hidden bg-background text-foreground m-0 p-0 w-full;
     }
   }
+  .marquee-w {
+    position: relative;
+    display: block;
+    width: 30rem;
+    height: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.marquee {
+    position: absolute;
+    display: block;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+}
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    font-family: 'poppinsbold';
+    text-align: center;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 140px;
+    font-size: 20px;
+    animation: marquee 10s linear infinite;
+}
+.marquee2 span {
+    animation-delay: 5s;
+}
+@keyframes marquee {
+    0% {
+        transform: translate(-100%, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

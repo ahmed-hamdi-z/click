@@ -97,6 +97,7 @@ const config = {
       backgroundImage: {
         'hero': "url('/images/bg-hero.png')",
         'footer': "url('/images/footer.png')",
+        'about': "url('/images/about.png')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

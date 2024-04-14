@@ -7,19 +7,15 @@ import Image from "next/image";
 import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
 
-
-
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const changeBg = () => {
-      if (window.scrollY >= 50) {
-          setNav(true);
-      }
-      else {
-          setNav(false);
-      }
-  }
-
+    if (window.scrollY >= 50) {
+      setNav(true);
+    } else {
+      setNav(false);
+    }
+  };
 
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
@@ -30,30 +26,25 @@ const Navbar = () => {
   const closeDropDown = () => {
     setIsDropDownVisible(false);
   };
-useEffect(() => {
-  window.addEventListener("scroll", changeBg);
-  return () => {
+  useEffect(() => {
+    window.addEventListener("scroll", changeBg);
+    return () => {
       window.addEventListener("scroll", changeBg);
-  }
-},[])
+    };
+  }, []);
   return (
-    <div className="w-full">
 
-
-    <div className={nav ? "bg-[#120E1F] bg-opacity-95 p-6 h-4 fixed w-full border-b-2 border-[#D9D9D9]   md:p-10 flex items-center justify-between z-40" : "bg-transparent p-6 h-4 fixed w-full border-b-2 border-[#D9D9D9]   md:p-10 flex items-center justify-between z-40"}>
-     
-        <div>
-          <Link className="cursor-pointer" href="/">
-            <Image
-              priority
-              src="/images/logo.png"
-              alt="Logo"
-              width={100}
-              height={100}
-              className="w-10 h-10 md:w-14 md:h-14"
-            />
-          </Link>
-        </div>
+      <div
+        className={
+          nav
+            ? "bg-[#120E1F] bg-opacity-95s p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9]  md:p-10 flex items-center justify-between z-40"
+            : "bg-transparent p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9] border-opacity-50  md:p-10 flex items-center justify-between z-40"
+        }
+      >
+     <Link href='/' className="flex justify-center text-teal-600 sm:justify-start cursor-pointer">
+      
+         <Image width={100} height={50} src='/images/logo.svg' alt="" />
+        </Link>
         <div
           className="cursor-pointer hidden text-xl
             md:flex space-x-10 items-center
@@ -107,11 +98,11 @@ useEffect(() => {
               focus:ring-offset-slate-50
             "
           >
-            تواصل معنا 
+            تواصل معنا
           </Link>
         </div>
-        </div>
-    </div>
+      </div>
+
   );
 };
 

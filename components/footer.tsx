@@ -6,12 +6,12 @@ import Image from "next/image";
 const Footer = () => {
   return (
     
-<footer className=" bg-slate-950 bg-[url('/images/footer.png')] bg-no-repeat bg-cover">
+<footer className=" bg-slate-950 bg-[url('/images/footer.png')] bg-no-repeat bg-cover rounded-t-3xl">
   <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-4">
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
       <div>
         <div className="flex justify-center text-teal-600 sm:justify-start">
-         <Image width={100} height={50} src='/images/logo.png' alt="" />
+         <Image width={100} height={50} src='/images/logo.svg' alt="" />
         </div>
 
         {/* <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">

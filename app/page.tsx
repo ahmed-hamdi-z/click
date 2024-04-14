@@ -1,44 +1,50 @@
 "use client";
 
-import { useState, useRef } from "react";
 import Navbar from "@/components/navbar";
-import { Spotlight } from "@/components/ui/spotlight";
-
-import GraphicDesign from "@/components/vision-mission";
+import Mission from "@/components/vision-mission";
 import Services from "@/components/services";
-import FAQS from "@/components/faq";
 import Footer from "@/components/footer";
+import About from "@/components/about";
+import Goals from "@/components/goals";
+import Heading from "@/components/heading";
 
 export default function Home() {
   return (
     <>
+      <div
+        className=" w-full h-screen 
+       bg-[url('/images/bg-hero.png')] bg-no-repeat bg-cover
+        bg-fixed overflow-hidden"
+      >
+        <Navbar />
 
-        
-      
-      <div className=" w-full h-screen md:items-center md:justify-center bg-[url('/images/bg-hero.png')] bg-no-repeat bg-cover bg-fixed antialiased bg-grid-white/[0.02]  overflow-hidden">
-       <Navbar />
-        <Spotlight
-          className="hidden md:flex md:-top-80 left-64  "
-          fill="white"
-        />
-
-        <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-32 px-2">
-          <div className="text-4xl pb-5 md:text-8xl px-6 text-center  bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
+        <div className=" mx-auto h-full w-full flex flex-col items-center justify-center ">
+          <div
+            className="text-5xl  md:text-7xl text-center  bg-clip-text 
+          text-transparent bg-gradient-to-b
+           from-neutral-50 to bg-neutral-400 bg-opacity-50 sm:text-5xl sm:mt-36"
+          >
             قم بأنشاء أعمالك وتنميتها <br /> وتوصيلها اللي العالم اجمع
           </div>
-          <p className="mt-4 text-md  md:text-3xl font-normal  text-neutral-100 max-w-lg text-center mx-auto px-4">
-            حلول مخصصة لعملك <br />
-            نحن فريق من المبدعين المتحمسين لمساعدتك على تنمية أعمالك
-          </p>
+          <div className="text-inherit" >
+            <Heading
+            text=" حلول مخصصة لعملك  نحن فريق من المبدعين المتحمسين لمساعدتك على تنمية أعمالك"
+          />
+          </div>
+          
         </div>
       </div>
-      <div className="bg-[#120E1F] ">
-        <GraphicDesign />
+      <div className="bg-[#ECECEC] rounded-t-3xl ">
+        <About />
       </div>
-      <div className="m-5 bg-[#120E1F] ">
-        <FAQS />
+
+      <div className="bg-[#120E1F] rounded-t-3xl">
+        <Mission />
       </div>
-      <div className="bg-[#ECECEC]">
+      <div className="pb-1 bg-[#120E1F] ">
+        <Goals />
+      </div>
+      <div className="bg-[#120E1F] rounded-b-3xl">
         <Services />
       </div>
       <div className="bg-[#ECECEC] ">
