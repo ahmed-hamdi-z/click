@@ -120,9 +120,6 @@ export const CardItem = ({
   const ref = useRef<HTMLDivElement>(null);
   const [isMouseEntered] = useMouseEnter();
 
-  useEffect(() => {
-    handleAnimations();
-  }, [isMouseEntered]);
 
   const handleAnimations = () => {
     if (!ref.current) return;
@@ -133,6 +130,9 @@ export const CardItem = ({
     }
   };
 
+  useEffect(() => {
+    handleAnimations();
+  });
   return (
     <Tag
       ref={ref}
