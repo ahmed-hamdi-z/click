@@ -33,21 +33,28 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
       exit={{ opacity: 0, y: "-100%" }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex-col flex space-y-10">
-        <Link href="/pricing" className="text-black text-2xl">
-          Pricing
-        </Link>
-        <Link href="/contact" className="text-black text-2xl">
-          Contact
-        </Link>
+      <div className="flex-col-reverse flex space-y-10 text-center font-aj font-bold">
+            <Link href="#mission" className="hover:text-gray-300 text-gray-950 mt-10">
+            المهمة
+          </Link>
+          <Link href="#mission" className="hover:text-gray-300 text-gray-950">
+            الرؤية
+          </Link>
 
-        <Link href="/book" className="text-black text-2xl">
-          Book a call
-        </Link>
+          <Link href="#services" className="hover:text-gray-300 text-gray-950">
+            خدماتنا
+          </Link>
+          <Link href="#about" className="hover:text-gray-300 text-gray-950">
+            من نحن
+          </Link>
+
+          <Link href="/" className="hover:text-gray-300 text-gray-950">
+            الرئيسية
+          </Link>
 
         {/* Add onClick handler to Services link */}
-        <div onClick={() => { onClose(); }} className="cursor-pointer text-black text-2xl">
-          Services
+        <div onClick={() => { onClose(); }} className="cursor-pointer hidden text-black text-2xl">
+          
         </div>
       </div>
     </motion.div>

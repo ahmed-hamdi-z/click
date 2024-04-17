@@ -37,14 +37,14 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "bg-[#120E1F] bg-opacity-95s p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9]  md:p-10 flex items-center justify-between z-40"
-            : "bg-transparent p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9] border-opacity-50  md:p-10 flex items-center justify-between z-40"
+            ? "bg-[#120E1F] font-aj bg-opacity-95s p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9]  md:p-10 flex items-center justify-between z-40"
+            : "bg-transparent font-aj p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9] border-opacity-50  md:p-10 flex items-center justify-between z-40"
         }
       >
      <Link href='/' className="flex justify-center text-teal-600 sm:justify-start cursor-pointer">
       
          <Image width={100} height={50} src='/images/logo.svg' alt="" />
-        </Link>
+        </Link> 
         <div
           className="cursor-pointer hidden text-xl
             md:flex space-x-10 items-center
@@ -53,7 +53,7 @@ const Navbar = () => {
           <Link href="#mission" className="hover:text-gray-300">
             المهمة
           </Link>
-          <Link href="#vision" className="hover:text-gray-300">
+          <Link href="#mission" className="hover:text-gray-300">
             الرؤية
           </Link>
 

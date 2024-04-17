@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        aj: ["var(--font-aj)"]
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

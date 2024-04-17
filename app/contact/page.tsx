@@ -117,14 +117,14 @@ export default function ContactForm() {
   }
 
   return (
-    <div className=" w-full   md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
+    <div className=" w-full md:items-center md:justify-center bg-[#1F1530] antialiased bg-grid-white/[0.02] relative overflow-hidden ">
       <Navbar />
-      <div className="md:flex items-start justify-center md:py-20 px-6 mt-5">
+      <div className="md:flex items-start justify-center md:py-20 px-6 mt-16">
         <Form {...form}>
           {!submitted ? (
             <form
               onSubmit={form.handleSubmit(onSubmit)}
-              className=" space-y-4 h-full  border rounded-3xl p-10 md:w-1/3"
+              className=" space-y-4 h-full border rounded-3xl p-10 md:w-1/3"
             >
               <div className="md:flex items-center gap-6 ">
                 <FormField

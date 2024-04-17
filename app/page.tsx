@@ -18,15 +18,15 @@ export default function Home() {
       >
         <Navbar />
 
-        <div className=" mx-auto h-full w-full flex flex-col items-center justify-center ">
+        <div className=" mx-auto h-full w-full flex flex-col  ">
           <div
-            className="text-5xl  md:text-7xl text-center  bg-clip-text 
+            className="text-5xl h-full flex items-center justify-center md:text-7xl text-center  bg-clip-text 
           text-transparent bg-gradient-to-b
-           from-neutral-50 to bg-neutral-400 bg-opacity-50 sm:text-5xl sm:mt-36"
+           from-neutral-50 to bg-neutral-400 bg-opacity-50 sm:text-5xl sm:mt-36 font-aj"
           >
-            قم بأنشاء أعمالك وتنميتها <br /> وتوصيلها اللي العالم اجمع
+            قم بإنشاء أعمالك وتنميتها <br /> وتوصيلها اللي العالم اجمع
           </div>
-          <div className="text-inherit" >
+          <div className="text-black" >
             <Heading
             text=" حلول مخصصة لعملك  نحن فريق من المبدعين المتحمسين لمساعدتك على تنمية أعمالك"
           />
@@ -47,7 +47,7 @@ export default function Home() {
       <div className="bg-[#120E1F] rounded-b-3xl">
         <Services />
       </div>
-      <div className="bg-[#ECECEC] ">
+      <div className=" ">
         <Footer />
       </div>
     </>

@@ -4,9 +4,9 @@ import { CardHoverEffectDemo } from "./snippets/card-hover-effect-snippet";
 
 const Services = () => {
   return (
-    <div id="services" className="max-w-5xl mx-auto py-20 ">
+    <div id="services" className="max-w-5xl mx-auto py-20 font-aj ">
       <div
-        className="text-4xl md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50"
+        className="text-4xl md:text-7xl pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50"
       >
         قم بتطوير عملك من خلال خدماتنا
       </div>
