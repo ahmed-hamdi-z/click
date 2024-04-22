@@ -8,8 +8,8 @@ const Mission = () => {
   return (
     <div id="mission">
       <div className=" p-4 mx-auto relative z-10  w-full pt-20 md:pt-20 font-aj">
-        <div className="text-4xl pt-3  md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
-          كلِك أولا <br />
+        <div className="text-4xl pt-3  md:pb-8 md:text-7xl text-center bg-clip-text text-transparent bg-gradient-to-b from-[#F0C336] to-[#814682] bg-opacity-50">
+          ًكلِك أولا <br />
         </div>
 
         <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto">

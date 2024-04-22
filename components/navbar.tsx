@@ -37,7 +37,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "bg-[#120E1F] font-aj bg-opacity-95s p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9]  md:p-10 flex items-center justify-between z-40"
+            ? "bg-slate-950 font-aj bg-opacity-95s p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9]  md:p-10 flex items-center justify-between z-40"
             : "bg-transparent font-aj p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9] border-opacity-50  md:p-10 flex items-center justify-between z-40"
         }
       >

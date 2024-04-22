@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import localfont from 'next/font/local'
 import "./globals.css";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 const font = Inter({ subsets: ["latin"] });
 const aj = localfont({ src: [{
@@ -21,7 +22,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="">
-      <body className={`${aj.variable} ${font.className}`}>{children}</body>
+      <body className={`${aj.variable} ${font.className}`}>
+      <ActiveSectionContextProvider>
+        
+            {children}
+        
+          </ActiveSectionContextProvider>
+        </body>
     </html>
   );
 }

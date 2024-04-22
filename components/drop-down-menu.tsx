@@ -34,21 +34,21 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex-col-reverse flex space-y-10 text-center font-aj font-bold">
-            <Link href="#mission" className="hover:text-gray-300 text-gray-950 mt-10">
+            <Link href="#mission" className="hover:text-gray-700 text-gray-950 mt-10">
             المهمة
           </Link>
-          <Link href="#mission" className="hover:text-gray-300 text-gray-950">
+          <Link href="#mission" className="hover:text-gray-700 text-gray-950">
             الرؤية
           </Link>
 
-          <Link href="#services" className="hover:text-gray-300 text-gray-950">
+          <Link href="#services" className="hover:text-gray-700 text-gray-950">
             خدماتنا
           </Link>
-          <Link href="#about" className="hover:text-gray-300 text-gray-950">
+          <Link href="#about" className="hover:text-gray-700 text-gray-950">
             من نحن
           </Link>
 
-          <Link href="/" className="hover:text-gray-300 text-gray-950">
+          <Link href="/" className="hover:text-gray-700 text-gray-950">
             الرئيسية
           </Link>
 

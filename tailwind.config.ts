@@ -98,6 +98,7 @@ const config = {
   
       },
       backgroundImage: {
+        'bgmobile':"url('/images/bgmobile.png')",
         'hero': "url('/images/bg-hero.png')",
         'footer': "url('/images/footer.png')",
         'about': "url('/images/about.png')",

@@ -10,10 +10,10 @@ import {
 const Goals = () => {
   return (
     <div
-      className=" md:p-20 bg-[#f6f5f4] w-full  rounded-3xl font-aj" >
+      className=" md:p-20 bg-[#f6f5f4] w-full text-right rounded-3xl font-aj" >
       <div className="   p-10 md:p-4 md:px-20">
-        <div className="text-4xl md:text-7xl pt-3 text-center bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-sky-200 bg-opacity-50">
-        أهدافنا 
+        <div className="text-4xl md:text-7xl pt-3 text-center bg-clip-text text-slate-950  bg-opacity-50">
+        أهدافنـــا 
         </div>
     
         <Accordion type="single" collapsible>
