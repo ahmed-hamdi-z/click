@@ -37,8 +37,8 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "bg-slate-950 font-aj bg-opacity-95s p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9]  md:p-10 flex items-center justify-between z-40"
-            : "bg-transparent font-aj p-6 h-4 fixed w-full border-b-[1px] border-[#D9D9D9] border-opacity-50  md:p-10 flex items-center justify-between z-40"
+            ? "bg-[#1F1530] font-aj bg-opacity-95s p-6 h-4 fixed w-full border-b-[1px] border-[#ceecf7]  md:p-10 flex items-center justify-between z-40"
+            : "bg-transparent font-aj p-6 h-4 fixed w-full border-b-[1px] border-[#ceecf7] border-opacity-50  md:p-10 flex items-center justify-between z-40"
         }
       >
      <Link href='/' className="flex justify-center text-teal-600 sm:justify-start cursor-pointer">
@@ -48,23 +48,23 @@ const Navbar = () => {
         <div
           className="cursor-pointer hidden text-xl
             md:flex space-x-10 items-center
-             text-white text-center "
+            text-[#ceecf7] text-center "
         >
-          <Link href="#mission" className="hover:text-gray-300">
+          <Link href="#mission" className="hover:text-[#f0c363]">
             المهمة
           </Link>
-          <Link href="#mission" className="hover:text-gray-300">
+          <Link href="#mission" className="hover:text-[#f0c363]">
             الرؤية
           </Link>
 
-          <Link href="#services" className="hover:text-gray-300">
+          <Link href="#services" className="hover:text-[#f0c363]">
             خدماتنا
           </Link>
-          <Link href="#about" className="hover:text-gray-300">
+          <Link href="#about" className="hover:text-[#f0c363]">
             من نحن
           </Link>
 
-          <Link href="/" className="hover:text-gray-300">
+          <Link href="/" className="hover:text-[#f0c363]">
             الرئيسية
           </Link>
         </div>
@@ -74,7 +74,7 @@ const Navbar = () => {
             // display an x icon when the drop is visible
             <div
               onClick={toggleDropDown}
-              className="w-8 h-8 text-slate-300 cursor-pointer"
+              className="w-8 h-8 text-[#ceecf7] cursor-pointer"
             >
               <X />
               <DropDownMenu onClose={closeDropDown} />
@@ -82,7 +82,7 @@ const Navbar = () => {
           ) : (
             <AlignJustify
               onClick={toggleDropDown}
-              className="w-8 h-8 text-slate-300 cursor-pointer"
+              className="w-8 h-8 text-[#ceecf7] cursor-pointer"
             />
           )}
         </div>
@@ -92,8 +92,8 @@ const Navbar = () => {
             href="/contact"
             className="
             inline-flex h-12 animate-shimmer items-center justify-center 
-            rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
-            bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors
+            rounded-md border border-slate-800 bg-[linear-gradient(110deg,#1F1530,45%,#ceecf7,55%,#f0c363)] 
+            bg-[length:200%_100%] px-6 font-medium text-[#ceecf7] transition-colors
              focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
               focus:ring-offset-slate-50
             "

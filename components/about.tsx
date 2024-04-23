@@ -12,14 +12,14 @@ const About = () => {
       </div>
       <div className="sm:w-1/2 p-5">
         <div className="text-right">
-          <span className="text-gray-500 border-b-2 border-indigo-600 uppercase">
+          <span className="text-[#ceecf7] border-b-2 border-[#1F1530] uppercase">
           </span>
-          <h2 className="my-4 font-bold text-3xl sm:text-4xl ">
+          <h2 className="my-4 font-bold text-3xl sm:text-4xl text-[#1F1530] ">
 
-            <span className="text-indigo-600">!</span> من{" "}
-            <span className="text-indigo-600">تكون كـلِك</span>
+            <span className="text-[#f0c363]">!</span> من{" "}
+            <span className="text-[#f0c363]">تكون كـلِك</span>
           </h2>
-          <p className="text-gray-700">
+          <p className="text-[#1F1530]">
             مرحبًا بكم في كليك، حيث يجتمع الإبداع مع استراتيجيات التسويق الذكية
             و الإبتكار لنقدم لك تجربة فريدة في عالم التسويق الرقمي نحن لسنا
             وكالة تسويق عادية - بل نحن فريق مكون من رواة قصص مبدعين، وعشاق

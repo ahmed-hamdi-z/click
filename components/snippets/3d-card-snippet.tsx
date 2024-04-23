@@ -12,14 +12,14 @@ export function ThreeDCard() {
            <CardItem
           as="p"
           translateZ="50"
-          className="text-xl font-bold text-white dark:text-white"
+          className="text-xl font-bold text-[#ceecf7]"
         >
         مهمتنا الارتقاء بكم
         </CardItem>
         <CardItem
           as="p"
           translateZ="70"
-          className="text-neutral-100 text-md max-w-sm mt-2 dark:text-neutral-300"
+          className="text-[#ceecf7] text-md max-w-sm mt-2 "
         >
          نحن نسعى لتحقيق تميز عملائنا من خلال تقديم استراتيجيات تسويقية متقدمة، وتصميمات إبداعية، وتنفيذ متميز يعتمد على أحدث التقنيات وأفضل الممارسات استنادا على مهاراتنا التحليلية والتقييم المستمر للنتائج لضمان تحقيق أهداف العملاء وتجاوز توقعاتهم
         </CardItem>

@@ -15,12 +15,12 @@ export default function Contact() {
     <>
 
     <Navbar />
-    <div   className=" bg-slate-950 w-full h-[100vh]  flex items-center justify-center   ">
+    <div   className=" bg-[#1F1530] w-full h-[100vh]  flex items-center justify-center   ">
  
     <div
       id="contact"
       ref={ref}
-      className=" bg-slate-950 w-full max-h-screen mt-10  flex items-center justify-center  "
+      className=" bg-[#1F1530] w-full max-h-screen mt-10  flex items-center justify-center  "
       
     >
    

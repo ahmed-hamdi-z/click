@@ -12,7 +12,7 @@ const Mission = () => {
           ًكلِك أولا <br />
         </div>
 
-        <p className="mt-4 text-lg font-normal  text-neutral-300 max-w-lg text-center mx-auto">
+        <p className="mt-4 text-lg font-normal  text-[#ceecf7] max-w-lg text-center mx-auto">
           الرؤية لابد ان تكون واضحة, والمهمة ليست مستحيلة أنت مع كلِك
         </p>
         <div className="items-center md:flex justify-center md:mx-auto md:space-x-10">

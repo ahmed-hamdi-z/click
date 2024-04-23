@@ -14,11 +14,7 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
       className="
     w-screen
     h-screen
-    bg-gradient-to-b 
-    from-neutral-50
-     to-neutral-400 
-     bg-opacity-50
-     text-slate-300
+    bg-[#ceecf7]
      p-6
      space-y-4
      absolute
@@ -34,21 +30,21 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex-col-reverse flex space-y-10 text-center font-aj font-bold">
-            <Link href="#mission" className="hover:text-gray-700 text-gray-950 mt-10">
+            <Link href="#mission" className="hover:text-[#f0c363] text-[#1F1530] mt-10">
             المهمة
           </Link>
-          <Link href="#mission" className="hover:text-gray-700 text-gray-950">
+          <Link href="#mission" className="hover:text-[#f0c363] text-[#1F1530]">
             الرؤية
           </Link>
 
-          <Link href="#services" className="hover:text-gray-700 text-gray-950">
+          <Link href="#services" className="hover:text-[#f0c363] text-[#1F1530]">
             خدماتنا
           </Link>
-          <Link href="#about" className="hover:text-gray-700 text-gray-950">
+          <Link href="#about" className="hover:text-[#f0c363] text-[#1F1530]">
             من نحن
           </Link>
 
-          <Link href="/" className="hover:text-gray-700 text-gray-950">
+          <Link href="/" className="hover:text-[#f0c363] text-[#1F1530]">
             الرئيسية
           </Link>
 

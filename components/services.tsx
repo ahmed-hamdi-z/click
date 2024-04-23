@@ -12,7 +12,7 @@ const Services = () => {
       </div>
       <p
         className="mt-4 text-lg font-normal
-          text-[#CECECE] max-w-lg 
+          text-[#ceecf7] max-w-lg 
           text-center mx-auto"
       >
         من تصميم مواقع الويب إلى إدارة وسائل التواصل الاجتماعي، نحن نقدم مجموعة

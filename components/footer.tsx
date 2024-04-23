@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className=" md:bg-slate-950 bg-slate-950   md:bg-[url('/images/footer.png')] xl:bg-[url('/images/footer.png')] bg-[url('/images/bgmobile.png')] bg-no-repeat bg-cover rounded-t-3xl font-aj">
+    <footer className=" bg-[#1F1530] rounded-t-3xl font-aj">
       <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-4">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
-            <div className="flex justify-center text-teal-600 sm:justify-start">
+            <div className="flex justify-center text-[#ceecf7] sm:justify-start">
               <Image width={100} height={50} src="/images/logo.svg" alt="" />
             </div>
 
@@ -18,7 +18,7 @@ const Footer = () => {
                   href="https://www.facebook.com/ClickAgencySaudi"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-100 transition hover:text-teal-100/75"
+                  className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                 >
                   <span className="sr-only">Facebook</span>
                   <svg
@@ -28,7 +28,7 @@ const Footer = () => {
                     clip-rule="evenodd"
                     stroke-linejoin="round"
                     stroke-miterlimit="2"
-                    className="w-7 h-7"
+                    className="w-7 h-7 text-[#ceecf7]"
                   >
                     <path
                       d="m374.244 285.825 14.105-91.961h-88.233v-59.677c0-25.159 12.325-49.682 51.845-49.682h40.116V6.214S355.67 0 320.864 0c-72.67 0-120.165 44.042-120.165 123.775v70.089h-80.777v91.961h80.777v222.31A320.565 320.565 0 0 0 250.408 512c16.911 0 33.511-1.324 49.708-3.865v-222.31h74.128Z"
@@ -45,11 +45,11 @@ const Footer = () => {
                   href="https://www.instagram.com/clickagencysa_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-100 transition hover:text-teal-100/75"
+                  className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                 >
                   <span className="sr-only">Instagram</span>
                   <svg
-                    className="h-7 w-7"
+                    className="h-7 w-7 text-[#ceecf7]"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                     aria-hidden="true"
@@ -68,14 +68,14 @@ const Footer = () => {
                   href="https://twitter.com/clickagencysa"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-100 transition hover:text-teal-100/75"
+                  className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                 >
                   <span className="sr-only">x</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 1200 1227"
                     fill="none"
-                    className="w-7 h-7"
+                    className="w-7 h-7 text-[#ceecf7]"
                   >
                     <g clip-path="url(#a)">
                       <path
@@ -102,13 +102,13 @@ const Footer = () => {
                   href="#"
                   rel="noreferrer"
                   target="_blank"
-                  className="text-teal-100 transition hover:text-teal-100/75"
+                  className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                 >
                   <span className="sr-only">snapchat</span>
                   <svg
                     viewBox="0 0 256 256"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="w-7 h-7"
+                    className="w-7 h-7 text-[#ceecf7]"
                   >
                     <path fill="none" d="M0 0h256v256H0z"></path>
                     <path
@@ -133,7 +133,7 @@ const Footer = () => {
               <ul className="mt-8 space-y-4 text-sm">
                 <li>
                   <a
-                    className="text-gray-100 transition hover:text-gray-100/75"
+                    className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                     href="#"
                   >
                     الرئيسية
@@ -141,7 +141,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="text-gray-100 transition hover:text-gray-100/75"
+                    className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                     href="#"
                   >
                     من نحن
@@ -149,7 +149,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    className="text-gray-100 transition hover:text-gray-100/75"
+                    className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                     href="#"
                   >
                     خدماتنا
@@ -158,7 +158,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    className="text-gray-100 transition hover:text-gray-100/75"
+                    className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                     href="#"
                   >
                     رؤيتنا
@@ -167,7 +167,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    className="text-gray-100 transition hover:text-gray-100/75"
+                    className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                     href="#"
                   >
                     {" "}
@@ -177,7 +177,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    className="text-gray-100 transition hover:text-gray-100/75"
+                    className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
                     href="/contact"
                   >
                     {" "}
@@ -211,7 +211,7 @@ const Footer = () => {
                       />
                     </svg>
 
-                    <span className="flex-1 text-gray-100">
+                    <span className="flex-1 text-[#ceecf7]">
                     info@click-sa.net
                     </span>
                   </p>
@@ -237,7 +237,7 @@ const Footer = () => {
                       />
                     </svg>
 
-                    <span className="flex-1 text-gray-100">+966544988088</span>
+                    <span className="flex-1 text-[#ceecf7]">+966544988088</span>
                   </a>
                 </li>
 
@@ -262,7 +262,7 @@ const Footer = () => {
                     />
                   </svg>
 
-                  <address className="-mt-0.5 flex-1 not-italic text-gray-100">
+                  <address className="-mt-0.5 flex-1 not-italic text-[#ceecf7]">
                     جدة - حي النهضة
                   </address>
                 </li>

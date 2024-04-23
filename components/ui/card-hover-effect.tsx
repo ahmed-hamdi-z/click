@@ -22,7 +22,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 sm:flex-col-reverse py-10",
         className
       )}
     >
@@ -36,7 +36,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-[#ECECEC] dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-[#ceecf7] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -52,8 +52,8 @@ export const HoverEffect = ({
           </AnimatePresence>
           <Card >
             <div className="flex items-center justify-end">{item.icon}</div>
-            <CardTitle className="text-right ">{item.title}</CardTitle>
-            <CardDescription className="text-right">{item.description}</CardDescription>
+            <CardTitle className="text-right text-[#814682] ">{item.title}</CardTitle>
+            <CardDescription className="text-right text-[#1F1530]">{item.description}</CardDescription>
           </Card>
         </div>
       ))}

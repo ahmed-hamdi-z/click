@@ -71,7 +71,7 @@
       @apply border-border;
     }
     body {
-      @apply overflow-x-hidden bg-background text-foreground m-0 p-0 w-full;
+      @apply overflow-x-hidden bg-[#ceecf7] text-foreground m-0 p-0 w-full;
     }
   }
   .marquee-w {
