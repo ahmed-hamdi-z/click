@@ -53,7 +53,7 @@ export const HoverEffect = ({
           <Card className="bg-[#EFF9FB]" >
             <div className="flex items-center justify-end">{item.icon}</div>
             <CardTitle className="text-right text-[#814682] ">{item.title}</CardTitle>
-            <CardDescription className="text-right text-[#1F1530]">{item.description}</CardDescription>
+            <CardDescription className="text-right text-[#30204b]">{item.description}</CardDescription>
           </Card>
         </div>
       ))}
