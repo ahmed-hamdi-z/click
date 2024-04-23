@@ -12,7 +12,7 @@ export function EvervaultCardSnippet() {
       <EvervaultCard text="رؤيتنا" />
 
       <h2 className="text-[#ceecf7] text-right  mt-4 text-md font-light">
-      كلِك تساعدك علي اكتشاف نفسك وتساعدك لتحقيق ذاتك
+      كلِك تساعدك علي إكتشاف نفسك وتساعدك لتحقيق ذاتك
 
       </h2>
       <p className="text-sm border font-light border-white/[0.2]  rounded-full mt-4  text-[#ceecf7] px-2 py-0.5">

@@ -54,16 +54,16 @@ export function CardPattern({ mouseX, mouseY }: any) {
 
   return (
     <div className="pointer-events-none">
-      <div className="absolute inset-0 rounded-2xl  [mask-image:linear-gradient(white,transparent)] group-hover/card:opacity-50"></div>
+      <div className="absolute inset-0 rounded-2xl text-[#ceecf7] [mask-image:linear-gradient([#ceecf7],transparent)] group-hover/card:opacity-100"></div>
       <motion.div
-        className="absolute inset-0 rounded-2xl  group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
+        className="absolute inset-0 rounded-2xl text-[#ceecf7] group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
         style={style}
       />
       <motion.div
         className="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100"
         style={style}
       >
-        <p className="absolute inset-x-2 xl:text-xl sm:text-xl md:text-xl  text-center h-full break-words whitespace-pre-wrap text-white font-aj transition duration-500">
+        <p className="absolute inset-x-2 xl:text-xl text-[#ceecf7] sm:text-xl md:text-xl  text-center h-full break-words whitespace-pre-wrap  font-aj transition duration-500">
           رؤيتنا هي أن نصبح الشريك الأول والأمثل للعلامات التجارية في رحلتها نحو
           التميز الرقمي<br />
            نحن في سعي مستمر لتقديم أفضل الخدمات والحلول التسويقية
