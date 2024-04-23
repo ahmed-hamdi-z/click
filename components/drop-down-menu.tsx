@@ -49,7 +49,7 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
           </Link>
 
         {/* Add onClick handler to Services link */}
-        <div onClick={() => { onClose(); }} className="cursor-pointer absolute top-[70vh] left-28 place-content-end text-black text-2xl">
+        <div onClick={() => { onClose(); }} className="cursor-pointer absolute top-96 left-28 place-content-end text-black text-2xl">
         <Link
             href="/contact"
             className="

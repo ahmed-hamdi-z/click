@@ -35,7 +35,8 @@ export default function Contact() {
             return;
           }
 
-          toast.success("Email sent successfully!");
+           alert("Email sent successfully!");
+          window.location.reload();
         }}
       >
          <input
