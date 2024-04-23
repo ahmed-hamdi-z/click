@@ -134,7 +134,7 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
-                    href="#"
+                    href="/"
                   >
                     الرئيسية
                   </a>
@@ -142,7 +142,7 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
-                    href="#"
+                    href="#about"
                   >
                     من نحن
                   </a>
@@ -150,7 +150,7 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
-                    href="#"
+                    href="#services"
                   >
                     خدماتنا
                   </a>
@@ -159,7 +159,7 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
-                    href="#"
+                    href="#mission"
                   >
                     رؤيتنا
                   </a>
@@ -168,7 +168,7 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
-                    href="#"
+                    href="#mission"
                   >
                     {" "}
                     مهمتنا{" "}
