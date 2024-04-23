@@ -11,9 +11,7 @@ const Services = () => {
         قم بتطوير عملك من خلال خدماتنا
       </div>
       <p
-        className="mt-4 text-lg font-normal
-          text-[#ceecf7] max-w-lg 
-          text-center mx-auto"
+        className="mt-4 text-lg font-normal text-[#ceecf7] max-w-lg text-center mx-auto"
       >
         من تصميم مواقع الويب إلى إدارة وسائل التواصل الاجتماعي، نحن نقدم مجموعة
         واسعة من الخدمات لمساعدتك على تنمية أعمالك

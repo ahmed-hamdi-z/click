@@ -10,9 +10,9 @@ import {
 const Goals = () => {
   return (
     <div
-      className=" md:p-20 bg-[#ceecf7] w-full text-right rounded-3xl text-[#1F1530]  font-aj" >
+      className=" md:p-20 bg-[#EFF9FB] w-full text-right rounded-3xl text-[#1F1530] font-aj" >
       <div className="   p-10 md:p-4 md:px-20">
-        <div className="text-4xl md:text-7xl pt-3 text-center bg-clip-text text-[#1F1530]   bg-opacity-50">
+        <div className="text-4xl md:text-7xl pt-3 text-center bg-clip-text  text-[#814682]  bg-opacity-50">
         أهدافنـــا 
         </div>
     

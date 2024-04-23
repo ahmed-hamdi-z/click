@@ -36,7 +36,7 @@ export const HoverEffect = ({
           <AnimatePresence >
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-[#FFF] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-gradient-to-b from-[#814682] to-[#c9c8c6] bg-opacity-50 block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,7 +50,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card className="bg-[#ceecf7]" >
+          <Card className="bg-[#EFF9FB]" >
             <div className="flex items-center justify-end">{item.icon}</div>
             <CardTitle className="text-right text-[#814682] ">{item.title}</CardTitle>
             <CardDescription className="text-right text-[#1F1530]">{item.description}</CardDescription>
@@ -71,7 +71,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 text-black overflow-hidden bg-[#D9D9D9] border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 text-[#1F1530] overflow-hidden bg-[#D9D9D9] border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >
@@ -89,7 +89,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-black font-bold tracking-wide mt-4", className)}>
+    <h4 className={cn("text-[#1F1530] font-bold tracking-wide mt-4", className)}>
       {children}
     </h4>
   );
@@ -104,7 +104,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-4 text-black tracking-wide leading-relaxed text-sm",
+        "mt-4 text-[#1F1530] tracking-wide leading-relaxed text-sm",
         className
       )}
     >

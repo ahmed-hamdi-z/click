@@ -30,26 +30,26 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex-col-reverse flex space-y-10 text-center font-aj font-bold">
-            <Link href="#mission" className="hover:text-[#f0c363] text-[#1F1530] mt-10">
+            <Link href="#mission" className="hover:text-[#f0c363] text-[#814682] mt-10">
             المهمة
           </Link>
-          <Link href="#mission" className="hover:text-[#f0c363] text-[#1F1530]">
+          <Link href="#mission" className="hover:text-[#f0c363] text-[#814682]">
             الرؤية
           </Link>
 
-          <Link href="#services" className="hover:text-[#f0c363] text-[#1F1530]">
+          <Link href="#services" className="hover:text-[#f0c363] text-[#814682]">
             خدماتنا
           </Link>
-          <Link href="#about" className="hover:text-[#f0c363] text-[#1F1530]">
+          <Link href="#about" className="hover:text-[#f0c363] text-[#814682]">
             من نحن
           </Link>
 
-          <Link href="/" className="hover:text-[#f0c363] text-[#1F1530]">
+          <Link href="/" className="hover:text-[#f0c363] text-[#814682]">
             الرئيسية
           </Link>
 
         {/* Add onClick handler to Services link */}
-        <div onClick={() => { onClose(); }} className="cursor-pointer absolute top-96 left-32 place-content-end text-black text-2xl">
+        <div onClick={() => { onClose(); }} className="cursor-pointer absolute top-96 left-32 place-content-end text-[#814682] text-2xl">
         <Link
             href="/contact"
             className="

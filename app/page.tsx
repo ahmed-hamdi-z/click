@@ -16,14 +16,14 @@ export default function Home() {
       >
         <Navbar />
 
-        <div className=" mx-auto h-full w-full flex flex-col  ">
+        <div className=" mx-auto h-full w-full flex flex-col font-aj ">
           <div
             className="text-5xl md:leading-normal xl:leading-normal leading-normal h-full flex items-center justify-center md:text-7xl text-center  bg-clip-text 
             text-[#ceecf7] bg-opacity-50 sm:text-5xl sm:mt-36 font-aj"
           >
-            قم بإنشاء أعمالك وتنميتها <br /> وتوصيلها اللي العالم اجمع
-          </div>
-          <div className="text-[#ceecf7]" >
+            قم بإنشاء أعمالك وتنميتها <br /> وتوصيلها اللي العالم أجمع
+          </div> 
+          <div className="text-[#ceecf7] w-full  font-aj" >
             <Heading
             text=" حلول مخصصة لعملك  نحن فريق من المبدعين المتحمسين لمساعدتك على تنمية أعمالك"
           />
@@ -31,7 +31,7 @@ export default function Home() {
           
         </div>
       </div>
-      <div className="bg-[#ceecf7] rounded-t-3xl ">
+      <div className="bg-[#EFF9FB] rounded-t-3xl ">
         <About />
       </div>
 
