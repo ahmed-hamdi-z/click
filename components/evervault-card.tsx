@@ -38,9 +38,9 @@ export const EvervaultCard = ({
  
         />
         <div className="relative z-10 w-full h-full flex hover:opacity-0 items-center justify-center">
-          <div className="relative flex items-center justify-center text-white font-bold text-4xl">
+          <div className="relative flex items-center justify-center text-[#ceecf7] font-bold text-4xl">
             <div className="absolute w-full h-full " />
-            <span className=" text-white z-20">{text}</span>
+            <span className=" text-[#ceecf7] z-20">{text}</span>
           </div>
         </div>
       </div>
@@ -54,13 +54,13 @@ export function CardPattern({ mouseX, mouseY }: any) {
 
   return (
     <div className="pointer-events-none">
-      <div className="absolute inset-0 rounded-2xl text-[#ceecf7] [mask-image:linear-gradient([#ceecf7],transparent)] group-hover/card:opacity-100"></div>
+      <div className="absolute inset-0 rounded-2xl text-[#ceecf7] [mask-image:linear-gradient([#ceecf7],transparent)] group-hover/card:opacity-100 md:group-hover/card:opacity-100 lg:group-hover/card:opacity-100"></div>
       <motion.div
-        className="absolute inset-0 rounded-2xl text-[#ceecf7] group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
+        className="absolute inset-0 rounded-2xl text-[#ceecf7]  group-hover/card:opacity-100 md:group-hover/card:opacity-100 lg:group-hover/card:opacity-100 backdrop-blur-xl transition duration-500"
         style={style}
       />
       <motion.div
-        className="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100"
+        className="absolute inset-0 rounded-2xl opacity-0 mix-blend-overlay  group-hover/card:opacity-100 md:group-hover/card:opacity-100 lg:group-hover/card:opacity-100"
         style={style}
       >
         <p className="absolute inset-x-2 xl:text-xl text-[#ceecf7] sm:text-xl md:text-xl  text-center h-full break-words whitespace-pre-wrap  font-aj transition duration-500">
