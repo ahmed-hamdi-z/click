@@ -38,7 +38,7 @@ export default function Home() {
       <div className="  bg-[#1F1530]  rounded-t-3xl">
         <Mission />
       </div>
-      <div className="pb-1 bg-[#1F1530] ">
+      <div className=" bg-[#1F1530] ">
         <Goals />
       </div>
       <div className="bg-[#1F1530]  rounded-b-3xl">
