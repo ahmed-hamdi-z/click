@@ -63,7 +63,7 @@ export function CardPattern({ mouseX, mouseY }: any) {
         className="absolute inset-0 rounded-2xl opacity-0  group-hover/card:opacity-100 md:group-hover/card:opacity-100 lg:group-hover/card:opacity-100"
         style={style}
       >
-        <p className="absolute inset-x-2 xl:text-xl text-[#ceecf7] sm:text-xl md:text-xl  text-center h-full break-words whitespace-pre-wrap  font-aj transition duration-500">
+        <p className="absolute inset-x-2 xl:text-xl text-[#ceecf7] sm:text-xl md:text-xl text-lg  text-center h-full break-words whitespace-pre-wrap  font-aj transition duration-500">
           رؤيتنا هي أن نصبح الشريك الأول والأمثل للعلامات التجارية في رحلتها نحو
           التميز الرقمي<br />
            نحن في سعي مستمر لتقديم أفضل الخدمات والحلول التسويقية
