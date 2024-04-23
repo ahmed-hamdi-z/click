@@ -39,40 +39,40 @@ export default function Contact() {
         }}
       >
          <input
-          className="h-14 w-[30rem] px-4 rounded-lg border border-black opacity-80 "
+          className="h-14 md:w-[30rem] lg:w-[30rem] w-[25rem] px-4 rounded-lg border border-black opacity-80 text-right "
        
           type="string"
           required
           maxLength={500}
-          placeholder="First Name"
+          placeholder="الأسم الأول"
         />
          <input
-          className="h-14 w-[30rem] px-4 rounded-lg border border-black opacity-80 "
+          className="h-14 md:w-[30rem] lg:w-[30rem] w-[25rem] px-4 rounded-lg border border-black opacity-80 text-right "
    
           type="string"
           required
           maxLength={500}
-          placeholder="Last Name"
+          placeholder="الأسم الأخير"
         />
          <input
-          className="h-14 w-[30rem] px-4 rounded-lg border border-black  opacity-80 "
+          className="h-14 md:w-[30rem] lg:w-[30rem] w-[25rem] px-4 rounded-lg border border-black  opacity-80 text-right "
           type="number"
           required
           maxLength={500}
-          placeholder="Phone Number"
+          placeholder="رقم الهاتف"
         />
         <input
-          className="h-14 w-[30rem] px-4 rounded-lg border border-black  opacity-80 "
+          className="h-14 md:w-[30rem] lg:w-[30rem] w-[25rem] px-4 rounded-lg border border-black  opacity-80 text-right "
           name="senderEmail"
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder="البريد الألكتروني"
         />
         <textarea
-          className="h-52 w-[30rem] my-3 rounded-lg border border-black p-4 opacity-80"
+          className="h-52 md:w-[30rem] lg:w-[30rem] w-[25rem] my-3 rounded-lg border border-black p-4 opacity-80 text-right"
           name="message"
-          placeholder="Your message"
+          placeholder="طلبك أو خدمتك"
           required
           maxLength={5000}
         />

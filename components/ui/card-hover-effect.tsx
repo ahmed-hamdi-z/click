@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import Link from "next/link";
+
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -22,7 +22,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 sm:flex-col-reverse py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:flex-col-reverse py-10 ",
         className
       )}
     >
@@ -33,10 +33,10 @@ export const HoverEffect = ({
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
-          <AnimatePresence>
+          <AnimatePresence >
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-[#ceecf7] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-[#FFF] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,7 +50,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card >
+          <Card className="bg-[#ceecf7]" >
             <div className="flex items-center justify-end">{item.icon}</div>
             <CardTitle className="text-right text-[#814682] ">{item.title}</CardTitle>
             <CardDescription className="text-right text-[#1F1530]">{item.description}</CardDescription>

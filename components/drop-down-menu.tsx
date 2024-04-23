@@ -49,8 +49,19 @@ const DropDownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
           </Link>
 
         {/* Add onClick handler to Services link */}
-        <div onClick={() => { onClose(); }} className="cursor-pointer hidden text-black text-2xl">
-          
+        <div onClick={() => { onClose(); }} className="cursor-pointer absolute top-[70vh] left-28 place-content-end text-black text-2xl">
+        <Link
+            href="/contact"
+            className="
+            inline-flex h-12 animate-shimmer items-center justify-center 
+            rounded-md border border-slate-800 bg-[linear-gradient(110deg,#1F1530,45%,#ceecf7,55%,#f0c363)] 
+            bg-[length:200%_100%] px-6 font-medium text-[#ceecf7] transition-colors
+             focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
+              focus:ring-offset-slate-50
+            "
+          >
+            تواصل معنا
+          </Link>
         </div>
       </div>
     </motion.div>
