@@ -98,10 +98,8 @@ const config = {
   
       },
       backgroundImage: {
-        'bgmobile':"url('/images/bgmobile.png')",
-        'hero': "url('/images/bg-hero.png')",
-        'footer': "url('/images/footer.png')",
-        'about': "url('/images/about.png')",
+        'hero': "url('/images/bg-hero.webp')",
+        'about': "url('/images/about.webp')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

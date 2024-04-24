@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <div
-        className=" w-full h-screen  bg-[url('/images/bg-hero.png')] bg-no-repeat bg-cover overflow-hidden " 
+        className=" w-full h-screen  bg-[url('/images/bg-hero.webp')] bg-no-repeat bg-cover overflow-hidden " 
       >
         <Navbar />
 
