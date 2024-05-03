@@ -21,7 +21,7 @@ export default function Home() {
             className="text-5xl md:leading-normal xl:leading-normal leading-normal h-full flex items-center justify-center md:text-7xl text-center  bg-clip-text 
             text-[#ceecf7] bg-opacity-50 sm:text-5xl sm:mt-36 font-aj"
           >
-            قم بإنشاء أعمالك وتنميتها <br /> وتوصيلها اللي العالم أجمع
+            قم بإنشاء أعمالك وتنميتها <br /> وتوصيلها الي العالم أجمع
           </div> 
           <div className="text-[#ceecf7] w-full  font-aj" >
             <Heading

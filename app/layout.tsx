@@ -24,10 +24,10 @@ export default function RootLayout({
     <html lang="">
       <body className={`${aj.variable} ${font.className}`}>
       <ActiveSectionContextProvider>
-        
+
             {children}
         
-          </ActiveSectionContextProvider>
+      </ActiveSectionContextProvider>
         </body>
     </html>
   );
