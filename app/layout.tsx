@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import localfont from 'next/font/local'
 import "./globals.css";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import Script from 'next/script'
+
 
 const font = Inter({ subsets: ["latin"] });
 const aj = localfont({ src: [{
@@ -22,11 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="">
+       <head>
+      <Script src="/utils/snaptr.js"></Script>
+      </head>
       <body className={`${aj.variable} ${font.className}`}>
       <ActiveSectionContextProvider>
-
             {children}
-        
       </ActiveSectionContextProvider>
         </body>
     </html>

@@ -99,7 +99,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="#"
+                  href="https://www.snapchat.com/add/clickagencysa?sender_web_id=2dd4405c-9efe-48e1-94c3-3de70eb87708&device_type=desktop&is_copy_url=true"
                   rel="noreferrer"
                   target="_blank"
                   className="text-[#ceecf7] transition hover:text-[#ceecf7]/75"
