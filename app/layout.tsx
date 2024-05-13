@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="">
        <head>
+       <meta name="facebook-domain-verification" content="0n3o49oyhesq5tobs7nxs79ik6j394" />
       <Script src="/utils/snaptr.js"></Script>
       </head>
       <body className={`${aj.variable} ${font.className}`}>
