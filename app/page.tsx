@@ -11,9 +11,7 @@ import Heading from "@/components/heading";
 export default function Home() {
   return (
     <>
-      <div
-        className=" w-full h-screen  bg-[url('/images/bg-hero.webp')] bg-no-repeat bg-cover overflow-hidden " 
-      >
+      <div className=" w-full h-screen  bg-[url('/images/bg-hero.webp')] bg-no-repeat bg-cover overflow-hidden ">
         <Navbar />
 
         <div className=" mx-auto h-full w-full flex flex-col font-aj ">
@@ -22,13 +20,10 @@ export default function Home() {
             text-[#ceecf7] bg-opacity-50 sm:text-5xl sm:mt-36 font-aj"
           >
             قم بإنشاء أعمالك وتنميتها <br /> وتوصيلها الي العالم أجمع
-          </div> 
-          <div className="text-[#ceecf7] w-full  font-aj" >
-            <Heading
-            text=" حلول مخصصة لعملك  نحن فريق من المبدعين المتحمسين لمساعدتك على تنمية أعمالك"
-          />
           </div>
-          
+          <div className="text-[#ceecf7] w-full  font-aj">
+            <Heading text=" حلول مخصصة لعملك  نحن فريق من المبدعين المتحمسين لمساعدتك على تنمية أعمالك" />
+          </div>
         </div>
       </div>
       <div className="bg-[#EFF9FB] rounded-t-3xl ">

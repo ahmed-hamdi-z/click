@@ -27,6 +27,8 @@ export default function RootLayout({
        <head>
        <meta name="facebook-domain-verification" content="0n3o49oyhesq5tobs7nxs79ik6j394" />
       <Script src="/utils/snaptr.js"></Script>
+      <Script src="/utils/pixel.js"></Script>
+      <Script src="/utils/tag.js"></Script>
       </head>
       <body className={`${aj.variable} ${font.className}`}>
       <ActiveSectionContextProvider>
