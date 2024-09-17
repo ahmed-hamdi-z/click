@@ -6,25 +6,20 @@ import Services from "@/components/services";
 import Footer from "@/components/footer";
 import About from "@/components/about";
 import Goals from "@/components/goals";
-import Heading from "@/components/heading";
+import Carousel from "@/components/carousel";
+import Image from "next/image";
 
 export default function Home() {
+
   return (
     <>
-      <div className=" w-full h-screen  bg-[url('/images/bg-hero.webp')] bg-no-repeat bg-cover overflow-hidden ">
+      <div className=" w-full h-auto bg-no-repeat bg-cover overflow-hidden ">
         <Navbar />
-
-        <div className=" mx-auto h-full w-full flex flex-col font-aj ">
-          <div
-            className="text-5xl md:leading-normal xl:leading-normal leading-normal h-full flex items-center justify-center md:text-7xl text-center  bg-clip-text 
-            text-[#ceecf7] bg-opacity-50 sm:text-5xl sm:mt-36 font-aj"
-          >
-            قم بإنشاء أعمالك وتنميتها <br /> وتوصيلها الي العالم أجمع
-          </div>
-          <div className="text-[#ceecf7] w-full  font-aj">
-            <Heading text=" حلول مخصصة لعملك  نحن فريق من المبدعين المتحمسين لمساعدتك على تنمية أعمالك" />
-          </div>
-        </div>
+        <Carousel autoSlide={true} autoSlideInterval={3000}>
+          <Image width={1500} height={500} src="/images/contact-bg.jpeg" alt="Slide 1" />
+          <Image width={1500} height={500} src="/images/contact-bg.jpeg" alt="Slide 2" />
+          <Image width={1500} height={500} src="/images/contact-bg.jpeg" alt="Slide 3" />
+        </Carousel>
       </div>
       <div className="bg-[#EFF9FB] rounded-t-3xl ">
         <About />

@@ -18,6 +18,7 @@ const config = {
       },
     },
     extend: {
+      
       fontFamily: {
         aj: ["var(--font-aj)"]
       },
@@ -99,7 +100,7 @@ const config = {
       },
       backgroundImage: {
         'hero': "url('/images/bg-hero.webp')",
-        'about': "url('/images/about.webp')",
+        'contact': "url('/images/contact-bg.jpeg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
