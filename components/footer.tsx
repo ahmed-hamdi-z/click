@@ -12,7 +12,7 @@ const Footer = () => {
               <Image width={100} height={50} src="/images/logo.svg" alt="" />
             </div>
 
-            <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
+            <ul className="mt-8 flex justify-center gap-3 sm:justify-start ">
               <li>
                 <a
                   href="https://www.facebook.com/ClickAgencySaudi"
@@ -271,7 +271,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-6 border-t border-gray-100 pt-6">
+        <div className="mt-6 border-t border-gray-100 pt-6 flex items-center justify-center">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
             <span>&middot;</span>
 

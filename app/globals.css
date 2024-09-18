@@ -117,3 +117,18 @@
     }
 }
 
+
+@keyframes border-swipe {
+  0% {
+    border-color: #ceecf7;
+    background-position: 100% 0;
+  }
+  50% {
+    border-color: #f0c363;
+    background-position: 0 100%;
+  }
+  100% {
+    border-color: #ceecf7;
+    background-position: 100% 0;
+  }
+}

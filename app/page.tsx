@@ -8,17 +8,19 @@ import About from "@/components/about";
 import Goals from "@/components/goals";
 import Carousel from "@/components/carousel";
 import Image from "next/image";
+import WhatsAppIcon from "@/components/whatsapp";
 
 export default function Home() {
 
   return (
     <>
-      <div className=" w-full h-auto bg-no-repeat bg-cover overflow-hidden ">
+      <div className="w-full h-auto bg-no-repeat bg-cover overflow-hidden">
         <Navbar />
         <Carousel autoSlide={true} autoSlideInterval={3000}>
-          <Image width={1500} height={500} src="/images/contact-bg.jpeg" alt="Slide 1" />
-          <Image width={1500} height={500} src="/images/contact-bg.jpeg" alt="Slide 2" />
-          <Image width={1500} height={500} src="/images/contact-bg.jpeg" alt="Slide 3" />
+          <Image width={1500} height={500} src="/images/banner.jpeg" alt="click Agency" />
+          <Image width={1500} height={500} src="/images/banner1.jpeg" alt="click Agency" />
+          <Image width={1500} height={500} src="/images/banner2.jpeg" alt="click Agency" />
+          <Image width={1500} height={500} src="/images/banner3.jpeg" alt="click Agency" />
         </Carousel>
       </div>
       <div className="bg-[#EFF9FB] rounded-t-3xl ">
@@ -37,6 +39,7 @@ export default function Home() {
       <div className=" mt-[0.5px]">
         <Footer />
       </div>
+      <WhatsAppIcon />
     </>
   );
 }

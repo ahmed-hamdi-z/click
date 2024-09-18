@@ -10,6 +10,7 @@ const config = {
 	],
   prefix: "",
   theme: {
+
     container: {
       center: true,
       padding: "2rem",
@@ -18,7 +19,7 @@ const config = {
       },
     },
     extend: {
-      
+  
       fontFamily: {
         aj: ["var(--font-aj)"]
       },
@@ -101,6 +102,7 @@ const config = {
       backgroundImage: {
         'hero': "url('/images/bg-hero.webp')",
         'contact': "url('/images/contact-bg.jpeg')",
+        'banner': "url('/images/banner1.jpeg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -121,6 +123,7 @@ const config = {
       },
       
       animation: {
+      
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
     
