@@ -14,14 +14,17 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full h-auto bg-no-repeat bg-cover overflow-hidden">
+      <div className="w-full h-auto bg-no-repeat bg-cover overflow-hidden bg-gradient-to-r from-[#1F1530] to-[#6C5481]">
         <Navbar />
-        <Carousel autoSlide={true} autoSlideInterval={3000}>
-          <Image width={1500} height={500} src="/images/banner.jpeg" alt="click Agency" />
-          <Image width={1500} height={500} src="/images/banner1.jpeg" alt="click Agency" />
-          <Image width={1500} height={500} src="/images/banner2.jpeg" alt="click Agency" />
-          <Image width={1500} height={500} src="/images/banner3.jpeg" alt="click Agency" />
-        </Carousel>
+        <div className="md:mt-0 mt-12">
+          <Carousel autoSlide={true} autoSlideInterval={3000}>
+            <Image width={1500} height={500} src="/images/banner.jpeg" alt="click Agency" />
+            <Image width={1500} height={500} src="/images/banner1.jpeg" alt="click Agency" />
+            <Image width={1500} height={500} src="/images/banner2.jpeg" alt="click Agency" />
+            <Image width={1500} height={500} src="/images/banner3.jpeg" alt="click Agency" />
+          </Carousel>
+        </div>
+
       </div>
       <div className="bg-[#EFF9FB] rounded-t-3xl ">
         <About />

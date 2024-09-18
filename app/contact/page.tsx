@@ -15,7 +15,7 @@ export default function Contact() {
     <div className="bg-gradient-to-r from-[#1F1530] to-[#6C5481]">
       <Navbar />
 
-      <div className="w-full flex items-center h-80 justify-center md:h-screen bg-contact bg-center md:bg-fixed md:bg-cover bg-contain bg-no-repeat overflow-hidden "></div>
+      <div className="w-full h-72 md:h-screen bg-contact bg-center md:bg-fixed md:bg-cover bg-contain bg-no-repeat overflow-hidden "></div>
 
       <div className="bg-gradient-to-r from-[#1F1530] to-[#6C5481] w-full flex md:flex-row flex-col-reverse p-6 pt-10 items-center justify-center space-y-8 md:space-y-0 md:space-x-10 md:mt-0 mt-[-50px]"
       >
