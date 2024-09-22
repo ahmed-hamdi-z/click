@@ -25,8 +25,8 @@ export default function RootLayout({
   return (
     <html lang="">
        <head>
-       <meta name="facebook-domain-verification" content="0n3o49oyhesq5tobs7nxs79ik6j394" />
-      <Script src="/utils/snaptr.js"></Script>
+       <meta name="facebook-domain-verification" content="l4uftfe7hc19im77lmto66rplkedoi" />
+      <Script src="/utils/snap.tsx"></Script>
       <Script src="/utils/pixel.js"></Script>
       <Script src="/utils/tag.js"></Script>
       </head>
