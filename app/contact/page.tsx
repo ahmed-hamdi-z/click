@@ -1,15 +1,39 @@
 "use client";
 
-import React from "react";
-import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
-import toast from "react-hot-toast";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 import Navbar from "@/components/navbar";
 import Image from "next/image";
 import WhatsAppIcon from "@/components/whatsapp";
+import { IoCloseSharp } from "react-icons/io5";
+
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+
+  const [message, setMessage] = useState<string | null>(null);
+  const form = useRef<HTMLFormElement>(null);
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_e4wh1ff",
+          "template_csk4gdr",
+          form.current,
+          "tSnLa-oJMC_FP9qvN"
+        )
+        .then(
+          () => {
+            setMessage("تم الإرسال بنجاح");
+            form.current;
+          },
+          (error) => {
+            setMessage(`FAILED... ${error.text}`);
+          }
+        );
+    }
+  };
 
   return (
     <div className="bg-gradient-to-r from-[#1F1530] to-[#6C5481]">
@@ -29,42 +53,38 @@ export default function Contact() {
           />
         </div>
 
-        <div id="contact" ref={ref} className="w-full md:w-1/2">
+        <div id="contact" className="w-full md:w-1/2">
           <form
-            className=" p-6  shadow-lg shadow-[#f0c363]"
-            action={async (formData) => {
-              const { data, error } = await sendEmail(formData);
-              if (error) {
-                toast.error(error);
-                return;
-              }
-              alert("Email sent successfully!");
-              window.location.reload();
-            }}
+            ref={form} onSubmit={sendEmail}
           >
             <div className="space-y-6">
               <input
+                name="user_name"
                 type="text"
                 placeholder="الاسم"
                 className="px-4 py-3 bg-transparent text-right text-[#f7d68a] w-full text-md  rounded-lg border-b border-[#ceecf7] focus:border-[#f0c363] outline-none focus:ring-1 focus:ring-[#f0c363] transition-all duration-300 ease-in-out"
 
               />
               <input
+                name="address"
                 type="text"
                 placeholder="العنوان"
                 className="px-4 py-3 bg-transparent text-right text-[#f0c363] w-full text-md rounded-lg border-b border-[#ceecf7] focus:border-[#f0c363] outline-none focus:ring-1 focus:ring-[#f0c363] transition-all duration-300 ease-in-out"
               />
               <input
+                name="phone"
                 type="tel"
                 placeholder="الجوال"
                 className="px-4 py-3 bg-transparent text-right text-[#f0c363] w-full text-md rounded-lg border-b border-[#ceecf7] focus:border-[#f0c363] outline-none focus:ring-1 focus:ring-[#f0c363] transition-all duration-300 ease-in-out"
               />
               <input
+                name="user_email"
                 type="email"
                 placeholder="البريد الإلكتروني"
                 className="px-4 py-3 bg-transparent text-right text-[#f0c363] w-full text-md rounded-lg border-b border-[#ceecf7] focus:border-[#f0c363] outline-none focus:ring-1 focus:ring-[#f0c363] transition-all duration-300 ease-in-out"
               />
               <textarea
+                name="message"
                 placeholder="رسالتك"
                 className="px-4 py-3 bg-transparent text-right text-[#f0c363] w-full text-md rounded-lg border-b border-[#ceecf7] focus:border-[#f0c363] outline-none focus:ring-1 focus:ring-[#f0c363] transition-all duration-300 ease-in-out"
               ></textarea>
@@ -72,7 +92,7 @@ export default function Contact() {
 
 
             <button
-              type="button"
+              type="submit"
               className="mt-8 flex items-center justify-center text-sm w-full rounded-lg px-6 py-3 tracking-wide text-[#1F1530] bg-[#f0c363] hover:bg-yellow-500 shadow-lg transition-all transform hover:scale-105 hover:shadow-xl"
             >
               <svg
@@ -92,7 +112,35 @@ export default function Contact() {
               </svg>
               إرسال
             </button>
+
           </form>
+          {message && (
+            <div className="fixed inset-0 flex items-center justify-center z-50">
+              <div className="relative bg-gradient-to-br from-[#764095] via-purple-500 to-pink-500 bg-black bg-opacity-50 text-white p-6 rounded-2xl shadow-2xl w-96 h-40 flex flex-col items-center justify-center transform transition-transform duration-300">
+
+                {/* Close Button */}
+                <button
+                  onClick={() => setMessage(null)}
+                  className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors duration-200"
+                  aria-label="Close"
+                >
+                  <IoCloseSharp size={24} />
+                </button>
+
+                {/* Message Text */}
+                <p className="text-xl font-bold mb-4">{message}</p>
+
+                {/* Close Button */}
+                <button
+                  onClick={() => setMessage(null)}
+                  className="bg-white text-[#764095] px-6 py-2 rounded-full font-semibold hover:bg-[#764095] hover:text-white transition-colors duration-200 ease-in-out shadow-md"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+
+          )}
         </div>
       </div>
       <WhatsAppIcon />

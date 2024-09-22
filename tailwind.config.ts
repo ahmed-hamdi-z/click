@@ -101,7 +101,7 @@ const config = {
       },
       backgroundImage: {
         'hero': "url('/images/bg-hero.webp')",
-        'contact': "url('/images/contact-bg.jpeg')",
+        'contact': "url('/images/contact.jpeg')",
         'banner': "url('/images/banner1.jpeg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

@@ -21,7 +21,7 @@ export default function Home() {
             <Image width={1500} height={500} src="/images/banner.jpeg" alt="click Agency" />
             <Image width={1500} height={500} src="/images/banner1.jpeg" alt="click Agency" />
             <Image width={1500} height={500} src="/images/banner2.jpeg" alt="click Agency" />
-            <Image width={1500} height={500} src="/images/banner3.jpeg" alt="click Agency" />
+            {/* <Image width={1500} height={500} src="/images/banner3.jpeg" alt="click Agency" /> */}
           </Carousel>
         </div>
 
