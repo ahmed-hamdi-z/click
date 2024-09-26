@@ -30,6 +30,7 @@
         <Script src="/utils/pixel-meta.js"></Script>
         <Script src="/utils/tag.js"></Script>
         <Script src="/utils/tiktok.js"></Script>
+        <Script src="/utils/microsoft.js"></Script>
         </head>
         <body className={`${aj.variable} ${font.className}`}>
         <ActiveSectionContextProvider>

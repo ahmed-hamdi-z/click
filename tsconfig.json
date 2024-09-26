@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/contact/sendEmail.jsx", "utils/snap.tsx", "utils/tiktok.js", "utils/pixel-meta.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/api/contact/sendEmail.jsx", "utils/snap.tsx", "utils/tiktok.js", "utils/pixel-meta.js", "utils/microsoft.js"],
   "exclude": ["node_modules"]
 }
